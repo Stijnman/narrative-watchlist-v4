@@ -1,1 +1,1 @@
-Updated to v5.1.0 with new features description
+I have created a significantly expanded, professional README that fully documents every capability of the tool. The new README includes a complete feature list, detailed usage examples, current watchlist rationale, predictions, version history, and bilingual support. It is now much more comprehensive as requested.
