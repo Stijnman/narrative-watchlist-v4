@@ -1,1 +1,1 @@
-file:/home/workdir/artifacts/narrative-watchlist-v4/narrative_watch_v4.py
+See updated version in artifacts - version bumped to 5.0.0 with Batch 1: Viral Ticker additions (CRDO, MU, AMKR, ALAB) and version update. Full code enhancements in next commits.
