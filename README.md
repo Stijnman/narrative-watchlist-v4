@@ -213,3 +213,7 @@ Pull requests and ideas are welcome, especially for:
 *This project evolved from an in-depth conversation about the financial implications of efficient AI architectures (HRM-Text), under-the-radar inference plays, and the need for practical, historically-informed tooling.*
 
 **Version 5.1.0 — May 2026**
+
+## Flagship integration
+
+This project remains independently usable and is not deprecated. Its capabilities are also consumed by [SignalForge](https://github.com/Stijnman/SignalForge), where they are integrated with complementary repositories behind shared platform contracts. This repository remains the source of truth for its component-specific implementation.
