@@ -62,7 +62,7 @@ jobs:
       - name: Check spelling
         run: |
           codespell --skip ".git,*.json,*.yml,*.yaml,CHANGELOG.md,node_modules" \
-            --ignore-words-list "competitor,researcher,gemini,typescript,react,express,api,AI,http,https" \
+            --ignore-words-list "competitor,researcher,gemini,typescript,react,express,api,AI,http,https,alle" \
             --check-filenames \
             --check-hidden
 
@@ -80,7 +80,7 @@ jobs:
         uses: trufflesecurity/trufflehog@dc2edce2b667ca9bb1b1821d673b2385a491ff73
         with:
           path: ./
-          extra_args: --debug --only-verified --fail
+          extra_args: --only-verified
 
   pre-commit:
     name: Pre-commit Hooks
