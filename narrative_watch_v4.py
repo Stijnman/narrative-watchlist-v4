@@ -118,6 +118,9 @@ def rsi(series: pd.Series, period: int = 14) -> float:
     delta = series.diff()
     gain = delta.clip(lower=0).rolling(period).mean()
     loss = (-delta.clip(upper=0)).rolling(period).mean()
+    # A zero-loss window has a defined boundary value, not a missing RSI.
+    if loss.iloc[-1] == 0:
+        return 100.0 if gain.iloc[-1] > 0 else 50.0
     rs = gain / loss.replace(0, np.nan)
     val = 100 - (100 / (1 + rs))
     return float(val.iloc[-1])
